@@ -2,6 +2,31 @@
 
 ## Untagged
 
+## [8.0.0](https://github.com/GoogleCloudPlatform/professional-services-data-validator/compare/v7.7.0...v8.0.0) (2025-06-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Full Support for Oracle Wallets - TLS, mTLS and Credentials ([#1533](https://github.com/GoogleCloudPlatform/professional-services-data-validator/issues/1533))
+
+### Features
+
+* Full Support for Oracle Wallets - TLS, mTLS and Credentials ([#1533](https://github.com/GoogleCloudPlatform/professional-services-data-validator/issues/1533)) ([d6520b3](https://github.com/GoogleCloudPlatform/professional-services-data-validator/commit/d6520b311a3992d62c36ac09f29c197fee7b829d))
+* use python-oracledb instead of cx_Oracle ([#1515](https://github.com/GoogleCloudPlatform/professional-services-data-validator/issues/1515)) ([9918456](https://github.com/GoogleCloudPlatform/professional-services-data-validator/commit/9918456e9bd0bba3b15ef8cc00289552f0c51fa8))
+
+
+### Bug Fixes
+
+* Fix `find-tables` execution for SQL Server to properly filter by schema ([#1521](https://github.com/GoogleCloudPlatform/professional-services-data-validator/issues/1521)) ([cf4492b](https://github.com/GoogleCloudPlatform/professional-services-data-validator/commit/cf4492bca91a25aa72025fc02b428435334d5900))
+* Fix exception when using --hash on TEXT column for row validation on SQL Server table ([#1530](https://github.com/GoogleCloudPlatform/professional-services-data-validator/issues/1530)) ([6642eef](https://github.com/GoogleCloudPlatform/professional-services-data-validator/commit/6642eef0460e4d55878f896258f89b5bc48630b9))
+* Only strip primary keys when they are fixed chars, not for varchars ([#1472](https://github.com/GoogleCloudPlatform/professional-services-data-validator/issues/1472)) ([506d8db](https://github.com/GoogleCloudPlatform/professional-services-data-validator/commit/506d8db5a6da60b7f4f49bdb8037f7fe0acd7893))
+* Use Pandas object for Impala timestamp (not datetime64[ns]) ([#1532](https://github.com/GoogleCloudPlatform/professional-services-data-validator/issues/1532)) ([81a3bfe](https://github.com/GoogleCloudPlatform/professional-services-data-validator/commit/81a3bfe0021fa42fa9c1789a091abfa41c053e4b))
+
+
+### Documentation
+
+* Add internal doc for DVT row hash throughput test ([#1531](https://github.com/GoogleCloudPlatform/professional-services-data-validator/issues/1531)) ([c120fe2](https://github.com/GoogleCloudPlatform/professional-services-data-validator/commit/c120fe2fb5882dbd869e034b65ff59796aa92db1))
+
 ## [7.7.0](https://github.com/GoogleCloudPlatform/professional-services-data-validator/compare/v7.6.1...v7.7.0) (2025-05-20)
 
 
